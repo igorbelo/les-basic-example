@@ -1,0 +1,17 @@
+<h3>Últimos Posts</h3>
+
+<table class="table">
+  <thead>
+    <th>Título</th>
+    <th>Autor</th>
+  </thead>
+
+  <tbody>
+    <%= for post <- @posts do %>
+    <tr>
+      <td><%= post.title %></td>
+      <td><%= post.author.name %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
